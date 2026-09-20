@@ -1,10 +1,210 @@
 @import "tailwindcss";
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+
+:root {
+  /* ================================
+     MEDIMIND — TEAL HEALTHCARE THEME
+     ================================ */
+
+  --primary: #0e6f78;
+  --primary-dark: #083e44;
+  --primary-light: #d9ecee;
+
+  --background: #f7f5f1;
+  --surface: #ffffff;
+  --surface-soft: #f1f5f3;
+
+  --text-primary: #1c1a16;
+  --text-secondary: #55504a;
+  --text-muted: #7a736b;
+
+  --border: #e2ded4;
+  --border-dark: #d3cec2;
+
+  --accent: #c9a227;
+  --accent-soft: #f6efd2;
+
+  --success: #1f7a4c;
+  --warning: #b54708;
+  --danger: #b42318;
+
+  --teal-soft: #e5f2f3;
+  --teal-medium: #8fc7cc;
+
+  --shadow-sm: 0 2px 8px rgba(28, 26, 22, 0.05);
+  --shadow-md: 0 8px 24px rgba(28, 26, 22, 0.08);
+  --shadow-lg: 0 16px 40px rgba(28, 26, 22, 0.11);
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
 }
 
-body{
-  font-family:Arial, Helvetica, sans-serif;
+/* ================================
+   RESET
+   ================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  background: var(--background);
+  color: var(--text-primary);
+
+  line-height: 1.6;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  color: var(--text-primary);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-muted);
+}
+
+::selection {
+  background: var(--primary-light);
+  color: var(--primary-dark);
+}
+
+/* ================================
+   SCROLLBAR
+   ================================ */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c6d6d5;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* ================================
+   ACCESSIBILITY
+   ================================ */
+
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* ================================
+   TRANSITIONS
+   ================================ */
+
+button,
+a,
+input,
+textarea,
+select {
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+/* ================================
+   COMMON MEDIMIND STYLES
+   ================================ */
+
+.medimind-surface {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+.medimind-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.medimind-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.medimind-primary {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+.medimind-primary:hover {
+  background: var(--primary-dark);
+}
+
+.medimind-text-primary {
+  color: var(--text-primary);
+}
+
+.medimind-text-secondary {
+  color: var(--text-secondary);
+}
+
+.medimind-text-muted {
+  color: var(--text-muted);
+}
+
+/* ================================
+   LOADING
+   ================================ */
+
+@keyframes loading {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
 }

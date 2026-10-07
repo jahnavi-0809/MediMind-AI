@@ -236,18 +236,27 @@ MediMind-AI/
 - Enable conversational health-related interaction.
 - Demonstrate practical use of AI and LLM technologies.
 - Develop a complete frontend and backend web application.
-📸 Application Screenshots
-🏠 Dashboard
-<img width="1915" height="957" alt="Screenshot 2026-09-20 171638" src="https://github.com/user-attachments/assets/f5a323bc-7fd6-44e2-b3d0-4bb43a44298a" />
+## 📸 Application Screenshots
 
-🩺 Symptom Checker
-Add Symptom Checker screenshot here.
-📄 Medical Report Analyzer
-Add Medical Report Analyzer screenshot here.
-💊 Medicine Information
-Add Medicine Information screenshot here.
-💬 AI Health Chat
-Add AI Health Chat screenshot here.
+### 🏠 Dashboard
+
+![MediMind AI Dashboard](Dashboard.png)
+
+### 🩺 Symptom Checker
+
+![MediMind AI Symptom Checker](<Symptom Checker.png>)
+
+### 📄 Medical Report Analyzer
+
+![MediMind AI Medical Report Analyzer](<Medical Report Analyzer.png>)
+
+### 💊 Medicine Information
+
+![MediMind AI Medicine Information](<Medicine Information.png>)
+
+### 💬 AI Health Chat
+
+![MediMind AI Health Chat](<AI Health Chat.png>)
 🚀 Getting Started
 Prerequisites
 Make sure the following are installed:
